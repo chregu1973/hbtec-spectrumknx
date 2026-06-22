@@ -1,5 +1,18 @@
 # hbTec SpectrumKNX Manager
 
+## Schnellstart
+
+```bash
+git clone https://github.com/chregu1973/hbtec-spectrumknx.git && cd hbtec-spectrumknx && ./install-manager.sh
+```
+
+Anschließend:
+
+```bash
+sknx
+```
+
+
 Verwaltung von mehreren SpectrumKNX-Installationen auf einem Linux-System.
 
 ## Version

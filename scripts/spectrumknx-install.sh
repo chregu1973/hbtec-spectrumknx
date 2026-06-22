@@ -11,6 +11,44 @@ echo "========================================"
 echo
 
 #############################################
+# Systemprüfung
+#############################################
+
+ARCH=$(uname -m)
+
+echo "Systemprüfung"
+echo "-------------"
+echo
+
+echo "Architektur : $ARCH"
+
+if [[ "$ARCH" != "x86_64" ]]
+then
+    echo
+    echo "WARNUNG:"
+    echo "Dieses System ist nicht x86_64."
+    echo
+    echo "SpectrumKNX wurde von hbTec aktuell"
+    echo "nur auf Intel/AMD Systemen getestet."
+    echo
+    echo "Bekannter Fehler auf ARM64:"
+    echo "  exec /usr/local/bin/uvicorn: exec format error"
+    echo
+
+    read -rp "Trotzdem fortfahren? (j/n): " CONTINUE
+
+    if [[ ! "$CONTINUE" =~ ^[JjYy]$ ]]
+    then
+        exit 0
+    fi
+else
+    echo "Status       : OK"
+fi
+
+echo
+
+
+#############################################
 # Voraussetzungen prüfen
 #############################################
 

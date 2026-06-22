@@ -95,11 +95,12 @@ show_status() {
 }
 
 
-install_project() {
+    install_project() {
 
-    ~/hbtec-dev/scripts/spectrumknx-install.sh
+    /opt/hbtec/tools/spectrumknx-install.sh
 
 }
+
 remove_project() {
 
     select_project || return

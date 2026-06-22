@@ -22,6 +22,10 @@ sudo cp scripts/spectrumknx-install.sh \
 sudo cp scripts/spectrumknx-manager.sh \
     "$INSTALL_DIR/"
 
+sudo cp VERSION \
+    "$INSTALL_DIR/"
+
+
 sudo chmod +x \
     "$INSTALL_DIR/spectrumknx-install.sh"
 

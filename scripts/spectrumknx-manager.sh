@@ -2,7 +2,7 @@
 
 BASE_DIR="/opt/hbtec/spectrumknx"
 
-VERSION_FILE="$HOME/hbtec-dev/VERSION"
+VERSION_FILE="/opt/hbtec/tools/VERSION"
 
 if [ -f "$VERSION_FILE" ]
 then

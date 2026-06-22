@@ -59,6 +59,20 @@ chmod +x scripts/spectrumknx-manager.sh
 
 ---
 
+## Manager systemweit installieren
+
+```bash
+chmod +x install-manager.sh
+
+./install-manager.sh
+```
+
+Anschließend starten:
+
+```bash
+sknx
+```
+
 # Neue SpectrumKNX Installation
 
 Start:
